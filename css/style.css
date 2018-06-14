@@ -59,7 +59,7 @@ header ul li a{
   color: var(--textMidColor);
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 header ul li a:hover{
@@ -121,7 +121,7 @@ footer p{
   color: var(--textMidColor);
   font-family: 'Montserrat', sans-serif;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .conA img{
@@ -144,7 +144,7 @@ footer p{
   color: var(--textMidColor);
   font-family: 'Montserrat', sans-serif;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .conB .productList{
@@ -169,7 +169,7 @@ footer p{
   color: var(--textMidColor);
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .conB .size{
@@ -190,7 +190,7 @@ footer p{
   color: var(--textMidColor);
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: bold;
   text-decoration: line-through;
 }
 
@@ -202,7 +202,7 @@ footer p{
   color: var(--textHoverColor);
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .conB .newProduct1 img, .newProduct2 img,
@@ -237,7 +237,7 @@ footer p{
   color: var(--textLightColor);
   font-family: 'Montserrat', sans-serif;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .conB .linkProduct1, .linkProduct2, .linkProduct3, .linkProduct4, .linkProduct5, .linkProduct6{
@@ -262,7 +262,7 @@ footer p{
   color: var(--textMidColor);
   font-family: 'Montserrat', sans-serif;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .conC .eventList{
@@ -295,7 +295,7 @@ footer p{
   color: var(--textMidColor);
   font-family: 'Montserrat', sans-serif;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .conC .eventName .eventInfo{
@@ -306,7 +306,7 @@ footer p{
   color: var(--textMidColor);
   font-family: 'Montserrat', sans-serif;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .conC .moreBtn1, .moreBtn2{
@@ -338,7 +338,7 @@ footer p{
   color: var(--textMidColor);
   font-family: 'Montserrat', sans-serif;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .conD .aboutUsList{
@@ -370,7 +370,7 @@ footer p{
   color: var(--textMidColor);
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .conD .content{
@@ -395,7 +395,7 @@ footer p{
   color: var(--textMidColor);
   font-family: 'Montserrat', sans-serif;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .conE .showroomList{
@@ -425,7 +425,7 @@ footer p{
   color: var(--textHoverColor);
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 1.5em;
 }
 
@@ -437,7 +437,7 @@ footer p{
   color: var(--textLightColor);
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .conE .location, .hour, .contact{
