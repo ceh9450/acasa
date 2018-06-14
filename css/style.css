@@ -483,4 +483,5 @@ footer p{
   background-color: #edd000;
   background-color: var(--textHoverColor);
   box-shadow:1px 1px 3px rgba(150,150,150,.3);
+  text-decoration: none;
 }
