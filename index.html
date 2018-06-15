@@ -312,13 +312,15 @@
     <section class="conMobileA">
       <div class="container">
         <img src="img/logo.svg" alt="acasa-logo" class="logo">
-        <img src="img/navBtn.svg" alt="navButton" class="navBtn" onclick="openNav()">
+        <div class="navBtnBox"  onclick="openNav()">
+          <img src="img/navBtn.svg" alt="navButton" class="navBtn">
+        </div>
       </div>
       <div id="slideNav" class="slideNav">
         <div class="darkBack" onclick="closeNav()"></div>
         <nav class="mobileNav" onclick="closeNav()">
-          <div class="xBox">
-            <img src="img/closeBtn.svg" class="closebtn" onclick="closeNav()">
+          <div class="xBox" onclick="closeNav()">
+            <img src="img/closeBtn.svg" class="closebtn">
           </div>
           <ul>
             <a href="#"><li>ABOUT US</li></a>
