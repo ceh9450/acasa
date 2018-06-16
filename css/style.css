@@ -21,15 +21,6 @@ body{
   background-color: var(--backColor);
 }
 
-@media(max-width:450px){
-  body{
-    margin: 50px 0 0 0;
-    background-image: url(../img/bg.svg);
-    background-size: cover;
-    background-attachment: fixed;
-  }
-}
-
 /* 헤더 설정 */
 header .container{
   position: fixed;
@@ -82,12 +73,6 @@ header ul li a:active{
   color: var(--textHoverColor);
 }
 
-@media(max-width:450px){
-  header{
-    display: none;
-  }
-}
-
 /* 푸터 설정 */
 footer .container{
   position: fixed;
@@ -116,177 +101,22 @@ footer p{
   text-decoration: none;
 }
 
-@media(min-width:451px){
+@media(min-width:851px){
   footer .mobileInfo{
     display: none;
-  }
-}
-
-@media(max-width:450px){
-  footer .container{
-    position: static;
-    background-color: #666666;
-    background-color: var(--textMidColor);
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-  }
-
-  footer .fixedInfo{
-    display: none;
-  }
-
-  footer .mobileInfo{
-    margin: 0;
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  footer .mobileInfo p{
-    padding: 0;
-    color: #fff;
-    color: var(--textLightColor);
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: .5em;
-    text-decoration: none;
   }
 }
 
 /* conMobileA */
-@media(min-width:451px){
+@media(min-width:851px){
   .conMobileA{
     display: none;
-  }
-}
-
-@media(max-width:450px){
-  .conMobileA{
-    width: 100%;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.5);
-    position: fixed;
-    top: 0;
-    /* box-shadow:1px 1px 3px rgba(150,150,150,.3); */
-  }
-
-  .conMobileA .container{
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
-    height: 100%;
-    /* background-color: rgba(255, 255, 255, 0.2); */
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .conMobileA .logo{
-    margin: auto 10px;
-    height: 35%;
-  }
-
-  .conMobileA .navBtnBox{
-    width: 15%;
-    height: 100%;
-    margin: auto 5px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  .conMobileA .navBtn{
-    margin: auto 0;
-    height: 45%;
-  }
-
-  .conMobileA .slideNav{
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    right: 0;
-    overflow-x: hidden;
-    transition: 0.1s;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-gap: 0;
-  }
-
-  .conMobileA .darkBack{
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-
-  .conMobileA .mobileNav{
-    background-color: #fafafa;
-    box-shadow:-3px 0px 5px rgba(150,150,150,.5);
-    position: relative;
-  }
-
-  .conMobileA .slideNav ul{
-    position: absolute;
-    top: 50px;
-    list-style: none;
-    margin: 0 15px;
-    padding: 0;
-  }
-
-  .conMobileA .slideNav li{
-    text-decoration: none;
-    color: #666666;
-    color: var(--textMidColor);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;
-    font-weight: 600;
-    line-height: 2.5em;
-  }
-
-  .conMobileA .slideNav ul a{
-    text-decoration: none;
-    padding: 0 auto;
-  }
-
-  .conMobileA .slideNav .xBox{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30%;
-    height: 50px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    align-self: center;
-  }
-
-  .conMobileA .xBox .closebtn{
-    flex: auto;
-    margin: auto 15px;
-    height: 45%;
-  }
-
-  .conMobileA .slideNav ul li a:hover{
-    color: #edd000;
-    color: var(--textHoverColor);
-    transition: 0.3s;
-  }
-
-  .conMobileA .slideNav ul li a:active{
-    color: #edd000;
-    color: var(--textHoverColor);
   }
 }
 
 /* conLast */
 .conLast .container{
   height: 200px;
-}
-
-@media(max-width:450px){
-  .conLast{
-    display: none;
-  }
 }
 
 /* conA */
@@ -311,19 +141,6 @@ footer p{
   display: block;
   width: 100%;
   box-shadow:1px 1px 3px rgba(150,150,150,.3);
-}
-
-@media(max-width:450px){
-  .conA .container{
-    width: 95%;
-  }
-
-  .conA .title p{
-    margin: 0 auto;
-    padding: 30px 0;
-    font-size: 1.5em;
-    font-weight: 600;
-  }
 }
 
 /* conB */
@@ -467,65 +284,6 @@ footer p{
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-@media(max-width:450px){
-  .conB .container{
-    width: 95%;
-  }
-
-  .conB .title p{
-    margin: 0 auto;
-    padding: 30px 0;
-    font-size: 1.5em;
-    font-weight: 600;
-  }
-
-  .conB .productList{
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-  }
-
-  .conB .name{
-    margin: 10px 0 0 10px;
-    font-size: 1em;
-    font-weight: 600;
-  }
-
-  .conB .size{
-    margin: 5px 0 0 10px;
-    font-size: 0.7em;
-    font-weight: 300;
-  }
-
-  .conB .cost1{
-    margin: 10px 0 0 10px;
-    font-size: 0.9em;
-  }
-
-  .conB .cost2{
-    margin: 3px 0 10px 10px;
-    font-size: 1.1em;
-    font-weight: 600;
-  }
-
-  .conB .saleTag{
-    top: 0.5em;
-    right: 0.5em;
-    width: 3.5em;
-    height: 3.5em;
-  }
-
-  .conB .saleTag .saleNum{
-    font-size: 1.3em;
-    font-weight: 600;
-  }
-
-  .conB .newProduct:hover img{
-  }
-
-  .conB .newProduct:hover .darkBack{
-  }
-}
-
 /* conC */
 .conC .container{
   margin: 0 auto;
@@ -632,48 +390,6 @@ footer p{
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-@media(max-width:450px){
-  .conC .container{
-    width: 95%;
-  }
-
-  .conC .title p{
-    margin: 0 auto;
-    padding: 30px 0;
-    font-size: 1.5em;
-    font-weight: 600;
-  }
-
-  .conC .eventList{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
-
-  .conC .eventName{
-    top: 10px;
-    left: 10px;
-    width: 70%;
-    font-size: 1.3em;
-    font-weight: 600;
-  }
-
-  .conC .eventName .eventInfo{
-    font-size: .9em;
-    font-weight: 300;
-  }
-
-  .conC .moreBtn{
-    width: 25%;
-  }
-
-  .conC .event:hover img{
-  }
-
-  .conC .event:hover .darkBack{
-  }
-}
-
 /* conD */
 .conD .container{
   margin: 0 auto;
@@ -763,12 +479,6 @@ footer p{
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.05);
-}
-
-@media(max-width:450px){
-  .conD{
-    display: none;
-  }
 }
 
 /* conE */
@@ -911,7 +621,276 @@ footer p{
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+/* max-width:450px */
 @media(max-width:450px){
+  body{
+    margin: 50px 0 0 0;
+    background-image: url(../img/bg.svg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  header{
+    display: none;
+  }
+
+  footer .container{
+    position: static;
+    background-color: #666666;
+    background-color: var(--textMidColor);
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  footer .fixedInfo{
+    display: none;
+  }
+
+  footer .mobileInfo{
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .mobileInfo p{
+    padding: 0;
+    color: #fff;
+    color: var(--textLightColor);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: .5em;
+    text-decoration: none;
+  }
+
+  .conMobileA{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
+    /* box-shadow:1px 1px 3px rgba(150,150,150,.3); */
+  }
+
+  .conMobileA .container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .conMobileA .logo{
+    margin: auto 10px;
+    height: 35%;
+  }
+
+  .conMobileA .navBtnBox{
+    width: 15%;
+    height: 100%;
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .conMobileA .navBtn{
+    margin: auto 0;
+    height: 45%;
+  }
+
+  .conMobileA .slideNav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.1s;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 0;
+  }
+
+  .conMobileA .darkBack{
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .conMobileA .mobileNav{
+    background-color: #fafafa;
+    box-shadow:-3px 0px 5px rgba(150,150,150,.5);
+    position: relative;
+  }
+
+  .conMobileA .slideNav ul{
+    position: absolute;
+    top: 50px;
+    list-style: none;
+    margin: 0 15px;
+    padding: 0;
+  }
+
+  .conMobileA .slideNav li{
+    text-decoration: none;
+    color: #666666;
+    color: var(--textMidColor);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 2.5em;
+  }
+
+  .conMobileA .slideNav ul a{
+    text-decoration: none;
+    padding: 0 auto;
+  }
+
+  .conMobileA .slideNav .xBox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: center;
+  }
+
+  .conMobileA .xBox .closebtn{
+    flex: auto;
+    margin: auto 15px;
+    height: 45%;
+  }
+
+  .conMobileA .slideNav ul li a:hover{
+    color: #edd000;
+    color: var(--textHoverColor);
+    transition: 0.3s;
+  }
+
+  .conMobileA .slideNav ul li a:active{
+    color: #edd000;
+    color: var(--textHoverColor);
+  }
+
+  .conA .container{
+    width: 95%;
+  }
+
+  .conA .title p{
+    margin: 0 auto;
+    padding: 30px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  .conB .container{
+    width: 95%;
+  }
+
+  .conB .title p{
+    margin: 0 auto;
+    padding: 30px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  .conB .productList{
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .conB .name{
+    margin: 10px 0 0 10px;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .conB .size{
+    margin: 5px 0 0 10px;
+    font-size: 0.7em;
+    font-weight: 300;
+  }
+
+  .conB .cost1{
+    margin: 10px 0 0 10px;
+    font-size: 0.9em;
+  }
+
+  .conB .cost2{
+    margin: 3px 0 10px 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+
+  .conB .saleTag{
+    top: 0.5em;
+    right: 0.5em;
+    width: 3.5em;
+    height: 3.5em;
+  }
+
+  .conB .saleTag .saleNum{
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+
+  .conB .newProduct:hover img{
+  }
+
+  .conB .newProduct:hover .darkBack{
+  }
+
+  .conC .container{
+    width: 95%;
+  }
+
+  .conC .title p{
+    margin: 0 auto;
+    padding: 30px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  .conC .eventList{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .conC .eventName{
+    top: 10px;
+    left: 10px;
+    width: 70%;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+
+  .conC .eventName .eventInfo{
+    font-size: .9em;
+    font-weight: 300;
+  }
+
+  .conC .moreBtn{
+    width: 25%;
+  }
+
+  .conC .event:hover img{
+  }
+
+  .conC .event:hover .darkBack{
+  }
+
+  .conD{
+    display: none;
+  }
+
   .conE .container{
     width: 95%;
   }
@@ -997,6 +976,387 @@ footer p{
   }
 
   .conE .showroom .darkBack{
+    display: none;
+  }
+
+  .conLast{
+    display: none;
+  }
+}
+
+@media(min-width:451px) and (max-width:850px){
+  body{
+    margin: 50px 0 0 0;
+    background-image: url(../img/bg.svg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  header{
+    display: none;
+  }
+
+  /* footer{
+    position: relative;
+  } */
+
+  footer .container{
+    position: static;
+    background-color: #666666;
+    background-color: var(--textMidColor);
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  footer .fixedInfo{
+    display: none;
+  }
+
+  footer .mobileInfo{
+    margin: 0;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .mobileInfo p{
+    padding: 0;
+    color: #fff;
+    color: var(--textLightColor);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: .7em;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .conMobileA{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0;
+    /* box-shadow:1px 1px 3px rgba(150,150,150,.3); */
+  }
+
+  .conMobileA .container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .conMobileA .logo{
+    margin: auto 10px;
+    height: 35%;
+  }
+
+  .conMobileA .navBtnBox{
+    width: 15%;
+    height: 100%;
+    margin: auto 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .conMobileA .navBtn{
+    margin: auto 0;
+    height: 45%;
+  }
+
+  .conMobileA .slideNav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.1s;
+    display: grid;
+    grid-template-columns: 67% 33%;
+    grid-gap: 0;
+  }
+
+  .conMobileA .darkBack{
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .conMobileA .mobileNav{
+    background-color: #fafafa;
+    box-shadow:-3px 0px 5px rgba(150,150,150,.5);
+    position: relative;
+  }
+
+  .conMobileA .slideNav ul{
+    position: absolute;
+    top: 50px;
+    list-style: none;
+    margin: 0 15px;
+    padding: 0;
+  }
+
+  .conMobileA .slideNav li{
+    text-decoration: none;
+    color: #666666;
+    color: var(--textMidColor);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 2.5em;
+  }
+
+  .conMobileA .slideNav ul a{
+    text-decoration: none;
+    padding: 0 auto;
+  }
+
+  .conMobileA .slideNav .xBox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: center;
+  }
+
+  .conMobileA .xBox .closebtn{
+    flex: auto;
+    margin: auto 15px;
+    height: 45%;
+  }
+
+  .conMobileA .slideNav ul li a:hover{
+    color: #edd000;
+    color: var(--textHoverColor);
+    transition: 0.3s;
+  }
+
+  .conMobileA .slideNav ul li a:active{
+    color: #edd000;
+    color: var(--textHoverColor);
+  }
+
+  .conA .container{
+    width: 95%;
+  }
+
+  .conA .title p{
+    margin: 0 auto;
+    padding: 30px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  .conB .container{
+    width: 95%;
+  }
+
+  .conB .title p{
+    margin: 0 auto;
+    padding: 30px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  .conB .productList{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+
+  .conB .name{
+    margin: 10px 0 0 10px;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .conB .size{
+    margin: 5px 0 0 10px;
+    font-size: 0.7em;
+    font-weight: 300;
+  }
+
+  .conB .cost1{
+    margin: 10px 0 0 10px;
+    font-size: 0.9em;
+  }
+
+  .conB .cost2{
+    margin: 3px 0 10px 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+
+  .conB .saleTag{
+    top: 0.5em;
+    right: 0.5em;
+    width: 3.5em;
+    height: 3.5em;
+  }
+
+  .conB .saleTag .saleNum{
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+
+  .conB .newProduct:hover img{
+  }
+
+  .conB .newProduct:hover .darkBack{
+  }
+
+  .conC .container{
+    width: 95%;
+  }
+
+  .conC .title p{
+    margin: 0 auto;
+    padding: 30px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  .conC .eventList{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+
+  .conC .eventName{
+    top: 10px;
+    left: 10px;
+    width: 70%;
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+
+  .conC .eventName .eventInfo{
+    font-size: .9em;
+    font-weight: 300;
+  }
+
+  .conC .moreBtn{
+    width: 25%;
+  }
+
+  .conC .event:hover img{
+  }
+
+  .conC .event:hover .darkBack{
+  }
+
+  .conD{
+    display: none;
+  }
+
+  .conE .container{
+    width: 95%;
+  }
+
+  .conE .title p{
+    margin: 0 auto;
+    padding: 30px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  .conE .showroomList{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+
+  .conE .showroom{
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .conE .thumbnail{
+    margin: 0;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .conE .thumbnail .centerBox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../img/showroom.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .conE .thumbnail img{
+    display: none;
+  }
+
+  .conE .informationBox .welcome{
+    display: none;
+  }
+
+  .conE .locationTitle, .hourTitle, .contactTitle{
+    margin: 10px 0 5px 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+
+  .conE .location, .hour, .contact{
+    text-align: left;
+    margin: 0 0 10px 10px;
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+
+  .conE .map{
+    grid-column: 1/3;
+    grid-row: 2;
+  }
+
+  /* .conE .mapSize{
+    position: relative;
+    padding-bottom: 100%;
+    overflow: hidden;
+  } */
+
+  .conE .map iframe{
+    position: static;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 33vh;
+  }
+
+  .conE .informationBox{
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .conE .showroom:hover img{
+  }
+
+  .conE .showroom:hover .darkBack{
+  }
+
+  .conE .showroom .darkBack{
+    display: none;
+  }
+
+  .conLast{
     display: none;
   }
 }
