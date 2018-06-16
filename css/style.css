@@ -739,8 +739,8 @@ footer p{
     color: var(--textMidColor);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3em;
-    font-weight: 600;
-    line-height: 2.5em;
+    font-weight: 700;
+    line-height: 2em;
   }
 
   .conMobileA .slideNav ul a{
@@ -1105,9 +1105,9 @@ footer p{
     color: #666666;
     color: var(--textMidColor);
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.4em;
-    font-weight: 600;
-    line-height: 2.5em;
+    font-size: 1.3em;
+    font-weight: 700;
+    line-height: 2em;
   }
 
   .conMobileA .slideNav ul a{
@@ -1131,7 +1131,7 @@ footer p{
 
   .conMobileA .xBox .closebtn{
     flex: auto;
-    margin: auto 15px;
+    margin: auto 24px;
     height: 45%;
   }
 
