@@ -17,8 +17,9 @@ font-family: 'Quicksand', sans-serif; */
 /* 데스크탑 바디 */
 body{
   margin: 0 0 0 180px;
-  background-color: #fafafa;
-  background-color: var(--backColor);
+  background-image: url(../img/bg.svg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* 헤더 설정 */
@@ -80,7 +81,7 @@ footer .container{
   left: 0;
   background-color: #fff;
   background-color: var(--backLightColor);
-  height: 300px;
+  height: auto;
   width: 180px;
 }
 
@@ -99,19 +100,6 @@ footer p{
   font-size: 10px;
   line-height: 1.7em;
   text-decoration: none;
-}
-
-@media(min-width:851px){
-  footer .mobileInfo{
-    display: none;
-  }
-}
-
-/* conMobileA */
-@media(min-width:851px){
-  .conMobileA{
-    display: none;
-  }
 }
 
 /* conLast */
@@ -346,7 +334,7 @@ footer p{
   padding: 0;
   color: #666666;
   color: var(--textMidColor);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Nanum Gothic', sans-serif;
   font-size: 32px;
   font-weight: 500;
 }
@@ -357,9 +345,9 @@ footer p{
   padding: 30px 0;
   color: #666666;
   color: var(--textMidColor);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Nanum Gothic', sans-serif;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .conC .moreBtn{
@@ -562,6 +550,7 @@ footer p{
   color: var(--textLightColor);
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 14px;
+  font-weight: 400;
 }
 
 .conE .map{
@@ -621,7 +610,15 @@ footer p{
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-/* max-width:450px */
+@media(min-width:1024px){
+  footer .mobileInfo{
+    display: none;
+  }
+  .conMobileA{
+    display: none;
+  }
+}
+
 @media(max-width:450px){
   body{
     margin: 50px 0 0 0;
@@ -661,6 +658,7 @@ footer p{
     color: var(--textLightColor);
     font-family: 'Nanum Gothic', sans-serif;
     font-size: .5em;
+    font-weight: 400;
     text-decoration: none;
   }
 
@@ -874,7 +872,6 @@ footer p{
 
   .conC .eventName .eventInfo{
     font-size: .9em;
-    font-weight: 300;
   }
 
   .conC .moreBtn{
@@ -950,7 +947,6 @@ footer p{
     text-align: left;
     margin: 0 0 10px 10px;
     font-size: 0.8em;
-    font-weight: 400;
   }
 
   .conE .map{
@@ -984,7 +980,7 @@ footer p{
   }
 }
 
-@media(min-width:451px) and (max-width:850px){
+@media(min-width:451px) and (max-width:1023px){
   body{
     margin: 50px 0 0 0;
     background-image: url(../img/bg.svg);
@@ -1241,7 +1237,6 @@ footer p{
 
   .conC .eventName .eventInfo{
     font-size: .9em;
-    font-weight: 300;
   }
 
   .conC .moreBtn{
@@ -1317,7 +1312,6 @@ footer p{
     text-align: left;
     margin: 0 0 10px 10px;
     font-size: 0.8em;
-    font-weight: 400;
   }
 
   .conE .map{
@@ -1358,5 +1352,178 @@ footer p{
 
   .conLast{
     display: none;
+  }
+}
+
+@media(min-width:1024px) and (max-width:1280px){
+  body{
+    margin: 0 0 0 180px;
+    background-image: url(../img/bg.svg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  header ul li a{
+    font-size: 0.9em;
+  }
+
+  .conLast .container{
+    display: none;
+  }
+
+  .conA .title p{
+    margin: 40px auto;
+    font-size: 1.3em;
+  }
+
+
+  .conB .title p{
+    margin: 40px auto;
+    font-size: 1.3em;
+  }
+
+  .conB .productList{
+    grid-gap: 10px;
+  }
+
+  .conB .name{
+    font-size: 1.2em;
+  }
+
+  .conB .cost2{
+    font-size: 1.2em;
+  }
+
+  .conB .saleTag{
+    top: 10px;
+    right: 10px;
+    width: 4.5em;
+    height: 4.5em;
+  }
+
+  .conB .saleTag .saleNum{
+    font-size: 1.7em;
+  }
+
+  .conB .linkProduct{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .conB .newProduct:hover img{
+    transform: scale(1.01);
+  }
+
+  .conB .newProduct:hover .darkBack{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .conC .title p{
+    margin: 40px auto;
+    font-size: 1.3em;
+  }
+
+  .conC .eventList{
+    grid-gap: 10px;
+  }
+
+  .conC .eventName{
+    top: 20px;
+    left: 20px;
+    width: 70%;
+    font-size: 1.3em;
+  }
+
+  .conC .eventName .eventInfo{
+    font-size: 0.8em;
+  }
+
+  .conC .moreBtn{
+    width: 20%;
+  }
+
+  .conD .title p{
+    margin: 40px auto;
+    font-size: 1.3em;
+  }
+
+  .conD .aboutUsList{
+    grid-gap: 10px;
+  }
+
+  .conD p{
+    margin: 15px;
+    line-height: 2em;
+  }
+
+  .conD .keyword{
+    font-size: 1.3em;
+  }
+
+  .conD .content{
+    font-size: 0.8em;
+    line-height: 2em;
+  }
+
+  .conE .container{
+    margin: 0 auto 110px auto;
+  }
+
+  .conE .title p{
+    margin: 40px auto;
+    font-size: 1.3em;
+  }
+
+  .conE .showroomList{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .conE .showroom{
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+
+  .conE .locationTitle, .hourTitle, .contactTitle{
+    font-size: 1.3em;
+  }
+
+  .conE .location, .hour, .contact{
+    margin: 0 10px 10px 15px;
+    font-size: 0.9em;
+  }
+
+  .conE .map{
+    grid-column: 1/4;
+    grid-row: 2;
+  }
+
+  /* .conE .mapSize{
+    position: relative;
+    padding-bottom: 100%;
+    overflow: hidden;
+  } */
+
+  .conE .map iframe{
+    position: static;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .conE .informationBox{
+    grid-column: 3;
+    grid-row: 1;
   }
 }
